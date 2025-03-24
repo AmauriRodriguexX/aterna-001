@@ -1,0 +1,227 @@
+.mt-top-100-40 {
+     margin-top: 100px;
+}
+
+/* Ocultar por defecto en escritorio */
+.hide-desktop-full {
+     display: none;
+}
+
+.center-d-left-m {
+     text-align: center;
+}
+
+@media (max-width: 768px) {
+
+     /* Mobile */
+     .mt-top-100-40 {
+          margin-top: 40px;
+     }
+
+     .hide-mobile {
+          display: none;
+     }
+
+     /* Mostrar en móviles */
+     .hide-desktop-full {
+          display: block;
+     }
+
+     .center-d-left-m {
+          text-align: left;
+     }
+
+     .currency-wrapper {
+          display: block;
+          width: 100%;
+     }
+
+     .currency-wrapper input {
+          width: 100%;
+     }
+
+     .button {
+          width: 100%;
+
+     }
+
+     #continueButton {
+          width: 100%;
+          bottom: 24px;
+          left: 50%;
+          z-index: 1000;
+          margin-bottom: 50px;
+          /* Para asegurarte de que esté por encima del resto */
+     }
+
+}
+
+.mt-4-desktop {
+     margin-top: 32px;
+}
+
+@media (max-width: 768px) {
+     .mt-4-desktop {
+          margin-top: 0;
+     }
+}
+
+
+.padding-top-100-b-100 {
+     padding-top: 100px;
+     padding-bottom: 100px;
+}
+
+/* En dispositivos móviles */
+@media (max-width: 768px) {
+     .padding-top-100-b-100 {
+          padding-top: 50px;
+          padding-bottom: 50px;
+     }
+}
+
+
+/* Contenedor general que agrupa dots y botones en la misma línea */
+.carousel-controls-container {
+     display: flex;
+     justify-content: space-between;
+     /* separa los dots y los botones */
+     align-items: center;
+     margin-top: 1rem;
+}
+
+/* ---- INDICADORES (DOTS) ---- */
+.carousel-indicators {
+     /* Anulamos la posición absoluta por defecto de Bootstrap */
+     position: static;
+     /* Estructura en línea para agrupar los puntitos */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     /* “Pastilla” de fondo */
+     background-color: #F6F6F6;
+     border-radius: 9999px;
+     /* Espacio interno para que parezca una pastilla */
+     padding: 0.5rem 1rem;
+     /* Quita el margin que trae por defecto y evita list-style */
+     margin: 0;
+     list-style: none;
+}
+
+/* Cada dot */
+.carousel-indicators [data-bs-target] {
+     width: 12px;
+     height: 12px;
+     border-radius: 50%;
+     border: none;
+     background-color: #D8DADA;
+     /* color de los dots inactivos */
+     opacity: 1;
+     /* quita la transparencia que pone Bootstrap */
+     margin: 0 6px;
+     /* separación entre dots */
+     cursor: pointer;
+}
+
+/* Dot activo */
+.carousel-indicators .active {
+     background-color: #CE0058;
+     /* color rosa/fucsia */
+}
+
+/* ---- BOTONES PREV/NEXT ---- */
+.carousel-control-prev,
+.carousel-control-next {
+     position: static;
+     background: transparent;
+     border: none;
+     outline: none;
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 0 0.5rem;
+}
+
+/* Ajustamos el tamaño y alineación del ícono */
+.carousel-control-prev .material-symbols-outlined,
+.carousel-control-next .material-symbols-outlined {
+     font-size: 15px;
+     /* Tamaño del icono */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding-left: 5px;
+}
+
+.carousel-control-prev {
+     background-color: #D8DADA;
+     color: #5E6A71;
+}
+
+.carousel-control-next {
+     background-color: #CE0058;
+     color: #FFFFFF !important;
+}
+
+.carousel-control-prev.disabled,
+.carousel-control-next.disabled {
+     opacity: 0.5;
+     pointer-events: none;
+     background-color: #E0E0E0;
+     color: #A0A0A0;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+     /* filter: invert(100%);  */
+     background-size: 20px 20px;
+     background-repeat: no-repeat;
+}
+
+
+
+
+@media (max-width: 768px) {
+     .carousel-inner {
+          position: relative;
+          width: 100%;
+          display: flex;
+          overflow: hidden;
+          height: 255px !important;
+     }
+}
+
+
+.red-icon {
+     color: #CE0058;
+}
+
+.mi-transform {
+     transform: translate(10px, 50px);
+     /* Mobile por defecto */
+}
+
+@media (min-width: 992px) {
+
+     /* Escritorio (lg) */
+     .mi-transform {
+          transform: translate(10px, 100px);
+     }
+}
+
+
+/* Se muestra icono y texto por defecto (escritorio) */
+.regresar-text {
+     display: inline;
+}
+
+/* En mobile (por ejemplo, hasta 768px de ancho) se oculta el texto */
+@media (max-width: 768px) {
+     .regresar-text {
+          display: none;
+     }
+}

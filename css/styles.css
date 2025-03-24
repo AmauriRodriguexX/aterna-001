@@ -1,0 +1,694 @@
+/* Fuente Amor Sans Pro - Regular */
+@font-face {
+     font-family: 'Amor Sans Pro';
+     src: url('../assets/fonts/amor/amor-sans-pro.otf') format('opentype');
+     font-weight: normal;
+     font-style: normal;
+}
+
+/* Fuente Amor Sans Pro - Bold */
+@font-face {
+     font-family: 'Amor Sans Pro';
+     src: url('../assets/fonts/amor/amor-sans-pro-bold.otf') format('opentype');
+     font-weight: bold;
+     font-style: normal;
+}
+
+/* Fuente Amor Sans Pro - Italic */
+@font-face {
+     font-family: 'Amor Sans Pro';
+     src: url('../assets/fonts/amor/amor-sans-proitalic.otf') format('opentype');
+     font-weight: normal;
+     font-style: italic;
+}
+
+/* Fuente Amor Sans Pro - Bold Italic */
+@font-face {
+     font-family: 'Amor Sans Pro';
+     src: url('../assets/fonts/amor/amor-sans-pro-bolditalic.otf') format('opentype');
+     font-weight: bold;
+     font-style: italic;
+}
+
+
+
+/* Fuente Inter - Regular */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-Regular.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
+
+/* Fuente Inter - Bold */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-Bold.ttf') format('truetype');
+     font-weight: bold;
+     font-style: normal;
+}
+
+/* Fuente Inter - ExtraBold */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-ExtraBold.ttf') format('truetype');
+     font-weight: 800;
+     font-style: normal;
+}
+
+/* Fuente Inter - Black */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-Black.ttf') format('truetype');
+     font-weight: 900;
+     font-style: normal;
+}
+
+/* Fuente Inter - Light */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-Light.ttf') format('truetype');
+     font-weight: 300;
+     font-style: normal;
+}
+
+/* Fuente Inter - ExtraLight */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-ExtraLight.ttf') format('truetype');
+     font-weight: 200;
+     font-style: normal;
+}
+
+/* Fuente Inter - SemiBold */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-SemiBold.ttf') format('truetype');
+     font-weight: 600;
+     font-style: normal;
+}
+
+/* Fuente Inter - Medium */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-Medium.ttf') format('truetype');
+     font-weight: 500;
+     font-style: normal;
+}
+
+/* Fuente Inter - Thin */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-Thin.ttf') format('truetype');
+     font-weight: 100;
+     font-style: normal;
+}
+
+@font-face {
+     font-family: 'Material Symbols Outlined';
+     src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v230/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCvHOej.woff2) format('woff2');
+     font-weight: normal;
+     font-style: normal;
+}
+
+
+.material-symbols-outlined {
+     font-variation-settings: 'FILL' 0, 'wght' 600, 'GRAD' 0, 'opsz' 24;
+     font-family: 'Material Symbols Outlined';
+     font-weight: normal;
+     font-style: normal;
+     font-size: 24px;
+     line-height: 1;
+     letter-spacing: normal;
+     text-transform: none;
+     display: inline-block;
+     white-space: nowrap;
+     word-wrap: normal;
+     direction: ltr;
+     -webkit-font-feature-settings: 'liga';
+     -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 1400px) {
+
+     .container,
+     .container-lg,
+     .container-md,
+     .container-sm,
+     .container-xl,
+     .container-xxl {
+          max-width: 1000px !important;
+     }
+}
+
+
+html,
+body {
+     height: 100%;
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+}
+
+.main-content {
+     flex: 1;
+     margin-top: 70px;
+}
+
+
+/* Encabezados con Amor Sans Pro */
+h1,
+h2,
+h4,
+h5 {
+     font-family: 'Amor Sans Pro', sans-serif;
+}
+
+/* h3 usa Inter específicamente */
+h3 {
+     font-family: 'Inter', sans-serif;
+}
+
+/* Estilo h1 */
+h1 {
+     font-size: 72px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 80px;
+     margin-bottom: 24px;
+}
+
+/* Estilo h2 */
+h2 {
+     font-size: 54px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 72px;
+     margin-bottom: 24px;
+     text-align: center;
+}
+
+/* Estilo h3 */
+h3 {
+     font-size: 104px;
+     font-style: normal;
+     font-weight: 300;
+     line-height: 104px;
+     margin-bottom: 24px;
+}
+
+/* Estilo h4 */
+h4 {
+     font-weight: normal;
+     font-size: 18px;
+}
+
+/* Estilo h5 */
+h5 {
+     font-weight: normal;
+     font-size: 14px;
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+     h1 {
+          font-family: 'Amor Sans Pro', sans-serif;
+          font-size: 58px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 72px;
+          text-align: center;
+     }
+
+     h2 {
+          font-family: 'Amor Sans Pro', sans-serif;
+          font-size: 54px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 72px;
+          text-align: left;
+     }
+}
+
+
+p {
+     font-family: 'Inter', sans-serif !important;
+     color: #252A2D;
+     font-family: Inter;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 28px;
+     letter-spacing: 0px;
+}
+
+@media (max-width: 768px) {
+     p {
+          font-size: 16px;
+          line-height: 28px;
+          /* Este valor se mantiene igual */
+     }
+}
+
+.flow-text-p {
+     font-family: 'Inter', sans-serif;
+     color: #252A2D;
+     font-size: 24px;
+     letter-spacing: 0px;
+     line-height: 40px;
+}
+
+/* Estilos para dispositivos móviles (máximo 768px de ancho) */
+@media (max-width: 768px) {
+     .flow-text-p {
+          font-size: 16px;
+          line-height: 29px;
+     }
+}
+
+/* Para pantallas móviles */
+@media (max-width: 768px) {
+     .flow-text-p {
+          font-size: 16px;
+          letter-spacing: 0px;
+     }
+}
+
+p.bold,
+span.bold {
+     font-weight: bold;
+     letter-spacing: 0px;
+}
+
+p.light,
+span.light {
+     font-weight: 300;
+     letter-spacing: 0px;
+}
+
+p.thin,
+span.thin {
+     font-weight: 100;
+}
+
+.text-align-center-to-left {
+     text-align: center;
+}
+
+@media (max-width: 767px) {
+     .text-align-center-to-left {
+          text-align: left;
+     }
+ }
+
+
+
+.text-header {
+     font-family: 'Inter', sans-serif !important;
+     font-size: 32px;
+     line-height: 52px;
+     font-weight: 300;
+}
+@media (max-width: 767px) {
+     .text-header {
+         font-size: 28px;
+         line-height: 48px;
+         font-style: normal;
+         font-weight: 300;
+     }
+ }
+
+.text-sections {
+     font-family: 'Inter', sans-serif !important;
+     color: #252A2D;
+     font-size: 28px;
+     font-style: normal;
+     font-weight: 300;
+     line-height: 48px;
+}
+
+/* NAVBAR */
+.custom-navbar {
+     background-color: white;
+     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+     z-index: 1060;
+}
+
+.nav-link {
+     color: #1e1e88;
+     margin-right: 1rem;
+     font-weight: 500;
+}
+
+.btn-escribenos {
+     background-color: #1e1e88;
+     color: white;
+     border-radius: 20px;
+     padding: 0.5rem 1.5rem;
+}
+
+.btn-escribenos:hover {
+     background-color: #00B092;
+     color: white;
+}
+
+/* SIDEBAR A LA DERECHA */
+.sidebar-menu {
+     position: fixed;
+     top: 0;
+     right: -100%;
+     height: 100%;
+     width: 80%;
+     max-width: 320px;
+     background-color: white;
+     z-index: 1055;
+     padding: 6rem 1rem 2rem;
+     /* espacio arriba por la navbar fija */
+     display: flex;
+     flex-direction: column;
+     transition: right 0.3s ease;
+     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-menu.active {
+     right: 0;
+}
+
+.sidebar-link {
+     padding: 1rem 0;
+     font-size: 1.1rem;
+     color: #1e1e88;
+     border-bottom: 1px solid #eee;
+     text-decoration: none;
+     font-weight: 500;
+}
+
+.sidebar-overlay {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100vw;
+     height: 100vh;
+     background-color: rgba(0, 0, 0, 0.4);
+     z-index: 1050;
+     display: none;
+}
+
+.sidebar-overlay.active {
+     display: block;
+}
+
+.p-left-logo-nav {
+     padding-left: 16px;
+}
+
+
+
+.main-content {
+     flex: 1;
+     /* Esto hace que el contenedor principal ocupe el espacio disponible y empuje el footer hacia abajo */
+}
+
+.padding-top-100-b-100-header {
+     padding-top: 100px;
+     padding-bottom: 100px;
+}
+
+/* En dispositivos móviles */
+@media (max-width: 768px) {
+     .padding-top-100-b-100-header {
+          padding-top: 50px;
+          padding-bottom: 0px;
+     }
+}
+
+.padding-top-100-b-100 {
+     padding-top: 100px;
+     padding-bottom: 100px;
+}
+
+/* En dispositivos móviles */
+@media (max-width: 768px) {
+     .padding-top-100-b-100 {
+          padding-top: 50px;
+          padding-bottom: 50px;
+     }
+}
+
+
+@media (min-width: 1400px) {
+
+     .container,
+     .container-lg,
+     .container-md,
+     .container-sm,
+     .container-xl,
+     .container-xxl {
+          max-width: 1187px !important;
+     }
+}
+
+
+.bk-strongblue {
+     background-color: #212492;
+}
+
+
+.bg-grey-blue-light {
+     background-color: #F1F3FF;
+}
+
+.text-blue-aterna {
+     color: #212492;
+}
+
+.rounded-4 {
+     border-radius: 1rem; /* Estilo por defecto (desktop) */
+ }
+ 
+ /* En móviles: quitar el border-radius */
+ @media (max-width: 767px) {
+     .rounded-4 {
+         border-radius: 0rem !important;
+     }
+ }
+
+ @media (max-width: 767px) {
+     .no-padding-mobile {
+         padding-left: 0px;
+         padding-right: 0px;
+     }
+ }
+ 
+
+
+.insurance-card {
+     background-color: #212492;
+     color: white;
+     padding: 1.5rem 1.2rem;
+     transition: background-color 0.3s ease;
+     cursor: pointer;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     min-height: 340px;
+}
+
+/* ICONOS */
+.icon-wrapper {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+}
+
+.card-footer {
+     margin-top: 32px;
+}
+
+.card-icon {
+     width: 48px;
+     height: auto;
+}
+
+.arrow-icon {
+     font-size: 24px;
+     color: white;
+     transition: opacity 0.3s ease;
+     transform: rotate(0deg) scale(1);
+     transition: opacity 0.3s ease, transform 0.3s ease;
+
+}
+
+.arrow-hover {
+     display: none;
+}
+
+.insurance-card:hover .arrow-default {
+     display: none;
+}
+
+.insurance-card:hover .arrow-hover {
+     display: inline-block;
+}
+
+/* CONTENIDO AL FINAL */
+.card-content {
+     margin-top: auto;
+     transition: transform 0.3s ease;
+}
+
+/* TITULO */
+.card-title {
+     font-family: 'Inter', sans-serif;
+     font-size: 28px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 28px;
+     position: relative;
+     bottom: -157px;
+     margin: 0;
+     transition: transform 0.3s ease, bottom 0.3s ease;
+}
+
+/* Al hacer hover: sube el título y el texto aparece */
+.insurance-card:hover .card-title {
+     transform: translateY(0px);
+     bottom: 0;
+     /* importante: vuelve a posición "normal" sin offset */
+}
+
+
+/* TEXTO */
+.card-description {
+     opacity: 0;
+     margin-top: 32px !important;
+     visibility: hidden;
+     transition: opacity 0.3s ease, visibility 0.3s ease;
+     font-family: 'Inter', sans-serif;
+     font-size: 24px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 40px;
+     color: white;
+     min-height: 48px;
+     margin-top: 0.5rem;
+}
+
+.insurance-card:hover .card-description {
+     opacity: 1;
+     visibility: visible;
+}
+
+/* HOVER COLOR */
+.insurance-card:hover {
+     background-color: #494DE5;
+}
+
+
+
+
+/* CONTENEDOR DE LA SECCIÓN MOBILE */
+.insurance-mobile {
+     background-color: #212492;
+     padding-left: 2rem;
+     padding-right: 0rem;
+     padding-top: 2rem;
+     margin-left: -12px;
+     margin-right: -12px;
+     height: 35vh; /* <- Aquí está la magia */
+     margin-bottom: 112px;
+}
+
+.insurance-slider {
+     display: flex;
+     gap: 1rem;
+     overflow-x: auto;
+     scroll-snap-type: x mandatory;
+     -webkit-overflow-scrolling: touch;
+     scrollbar-width: none;
+}
+
+.insurance-slider::-webkit-scrollbar {
+     display: none;
+}
+
+.insurance-mobile .insurance-card {
+     min-width: 240px;
+     max-width: 260px;
+     margin-right: 8px;
+     background-color: #494DE5;
+     border-radius: 16px;
+     padding: 1.5rem 1.2rem;
+     min-width: 300px;
+     color: white;
+     scroll-snap-align: start;
+     flex: 0 0 auto;
+     display: flex;
+     height: 355px;
+     flex-direction: column;
+     justify-content: space-between;
+}
+
+.insurance-mobile .icon-wrapper {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+}
+
+.insurance-mobile .card-icon {
+     width: 48px;
+     height: auto;
+}
+
+.insurance-mobile .arrow-icon {
+     font-size: 24px;
+     color: white;
+}
+
+/* TITULO */
+.insurance-mobile .card-title-mobile {
+
+     font-family: 'Inter', sans-serif;
+     font-family: Inter;
+     font-size: 28px;
+     font-style: normal;
+     font-weight: 700;
+     margin-top: 0rem;
+     margin-bottom: 2rem;
+}
+
+/* TEXTO */
+.insurance-mobile .card-description-mobile {
+     opacity: 1 !important;
+     visibility: visible !important;
+     font-family: 'Inter', sans-serif;
+     font-size: 24px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 40px;
+     position: relative;
+     bottom: 52px;
+     color: white;
+}
+
+
+.insurance-mobile .insurance-card:hover .card-description,
+.insurance-mobile .insurance-card:hover .card-title {
+  transform: none;
+  bottom: auto;
+}
+
+.p-d-right-0 {
+     margin-right: 24px !important;
+}
+
+.mt-6 {
+     margin-top: 64px;
+}
+
+
+@media (max-width: 767px) {
+     .text-only-center {
+          text-align: center;
+     }
+ }
