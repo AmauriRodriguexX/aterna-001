@@ -164,10 +164,6 @@ h5 {
      font-family: 'Amor Sans Pro', sans-serif;
 }
 
-/* h3 usa Inter específicamente */
-h3 {
-     font-family: 'Inter', sans-serif;
-}
 
 /* Estilo h1 */
 h1 {
@@ -190,11 +186,11 @@ h2 {
 
 /* Estilo h3 */
 h3 {
-     font-size: 104px;
+     font-family: 'Inter', sans-serif;
+     font-size: 112px;
      font-style: normal;
-     font-weight: 300;
-     line-height: 104px;
-     margin-bottom: 24px;
+     font-weight: 400;
+     line-height: 112px;
 }
 
 /* Estilo h4 */
@@ -228,6 +224,23 @@ h5 {
           line-height: 72px;
           text-align: left;
      }
+
+     h3 {
+          font-family: 'Inter', sans-serif;
+          font-size: 96px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 96px;
+     }
+}
+
+.texto-number {
+     font-family: 'Inter', sans-serif !important;
+     color: #252A2D;
+     font-size: 26px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 26px;
 }
 
 
@@ -299,9 +312,7 @@ span.thin {
      .text-align-center-to-left {
           text-align: left;
      }
- }
-
-
+}
 
 .text-header {
      font-family: 'Inter', sans-serif !important;
@@ -309,14 +320,15 @@ span.thin {
      line-height: 52px;
      font-weight: 300;
 }
+
 @media (max-width: 767px) {
      .text-header {
-         font-size: 28px;
-         line-height: 48px;
-         font-style: normal;
-         font-weight: 300;
+          font-size: 28px;
+          line-height: 48px;
+          font-style: normal;
+          font-weight: 300;
      }
- }
+}
 
 .text-sections {
      font-family: 'Inter', sans-serif !important;
@@ -402,8 +414,6 @@ span.thin {
      padding-left: 16px;
 }
 
-
-
 .main-content {
      flex: 1;
      /* Esto hace que el contenedor principal ocupe el espacio disponible y empuje el footer hacia abajo */
@@ -463,23 +473,24 @@ span.thin {
 }
 
 .rounded-4 {
-     border-radius: 1rem; /* Estilo por defecto (desktop) */
- }
- 
- /* En móviles: quitar el border-radius */
- @media (max-width: 767px) {
-     .rounded-4 {
-         border-radius: 0rem !important;
-     }
- }
+     border-radius: 1rem;
+     /* Estilo por defecto (desktop) */
+}
 
- @media (max-width: 767px) {
-     .no-padding-mobile {
-         padding-left: 0px;
-         padding-right: 0px;
+/* En móviles: quitar el border-radius */
+@media (max-width: 767px) {
+     .rounded-4 {
+          border-radius: 0rem !important;
      }
- }
- 
+}
+
+@media (max-width: 767px) {
+     .no-padding-mobile {
+          padding-left: 0px;
+          padding-right: 0px;
+     }
+}
+
 
 
 .insurance-card {
@@ -595,7 +606,8 @@ span.thin {
      padding-top: 2rem;
      margin-left: -12px;
      margin-right: -12px;
-     height: 35vh; /* <- Aquí está la magia */
+     height: 35vh;
+     /* <- Aquí está la magia */
      margin-bottom: 112px;
 }
 
@@ -674,8 +686,8 @@ span.thin {
 
 .insurance-mobile .insurance-card:hover .card-description,
 .insurance-mobile .insurance-card:hover .card-title {
-  transform: none;
-  bottom: auto;
+     transform: none;
+     bottom: auto;
 }
 
 .p-d-right-0 {
@@ -691,4 +703,4 @@ span.thin {
      .text-only-center {
           text-align: center;
      }
- }
+}
