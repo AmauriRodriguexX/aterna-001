@@ -4,221 +4,411 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> A</title>
+  <title>Seguro de vida, salud y daños | Alterna Perú</title>
   <meta name="description"
-    content="Si buscas apoyo emocional, este programa de terapia psicológica te conecta con profesionales que te ayudarán a manejar tus emociones y fortalecer tu bienestar.">
+    content="Protege lo que más importa con coberturas completas y adaptadas a tus necesidades. Conoce nuestros seguros de vida, seguro de salud y seguro de daños.">
   <!-- Bootstrap y Estilos CSS locales -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/formulario.css">
   <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
   <!-- Google Tag Manager -->
-
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-T57NB293');</script>
   <!-- End Google Tag Manager -->
 </head>
 
 <body>
   <!-- Google Tag Manager (noscript) -->
-
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T57NB293" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-<nav class="navbar custom-navbar fixed-top">
-  <div class="container d-flex justify-content-between align-items-center">
-    <a class="navbar-brand p-left-logo-nav " href="#">
-      <img src="assets/general/aterna-logo-color.png" alt="Logo Aterna" width="127">
-    </a>
-    <button class="btn d-lg-none p-0 border-0 bg-transparent" id="toggleSidebar">
-      <img src="assets/icon/menu.png" alt="Menú" id="menuIcon" width="32">
-    </button>
-    <div class="d-none d-lg-flex align-items-center gap-4">
-      <a href="#productos" class="nav-link scroll-link">Productos</a>
-      <a href="#mision" class="nav-link scroll-link">Nuestra misión</a>
-      <a href="#quienes" class="nav-link scroll-link">Quiénes somos</a>
-      <a href="#escribenos" class="btn btn-escribenos scroll-link">Escríbenos</a>
+  <nav class="navbar custom-navbar fixed-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand p-left-logo-nav " href="index.html">
+        <img src="assets/general/aterna-logo-color.png" alt="Logo Aterna" width="100">
+      </a>
+      <button class="btn d-lg-none p-0 border-0 bg-transparent" id="toggleSidebar">
+        <img src="assets/icon/menu.png" alt="Menú" id="menuIcon" width="32">
+      </button>
+      <div class="d-none d-lg-flex align-items-center gap-4">
+        <a href="#productos" class="nav-link scroll-link">Productos</a>
+        <a href="#mision" class="nav-link scroll-link">Nuestra misión</a>
+        <a href="#quienes" class="nav-link scroll-link">Quiénes somos</a>
+        <a href="#escribenos" class="btn btn-escribenos scroll-link">Escríbenos</a>
+      </div>
     </div>
+  </nav>
+  <div id="sidebarMenu" class="sidebar-menu">
+    <a href="#productos" class="sidebar-link scroll-link">Productos</a>
+    <a href="#mision" class="sidebar-link scroll-link">Nuestra misión</a>
+    <a href="#quienes" class="sidebar-link scroll-link">Quiénes somos</a>
+    <a href="#escribenos" class="btn btn-escribenos scroll-link w-100 mt-auto">Escríbenos</a>
   </div>
-</nav>
-<div id="sidebarMenu" class="sidebar-menu">
-  <a href="#productos" class="sidebar-link scroll-link">Productos</a>
-  <a href="#mision" class="sidebar-link scroll-link">Nuestra misión</a>
-  <a href="#quienes" class="sidebar-link scroll-link">Quiénes somos</a>
-  <a href="#escribenos" class="btn btn-escribenos scroll-link w-100 mt-auto">Escríbenos</a>
-</div>
-<div id="sidebarOverlay" class="sidebar-overlay"></div>
+  <div id="sidebarOverlay" class="sidebar-overlay"></div>
 
-<div class="main-content">
-  <section class="bk-strongblue text-white">
-    <div class="container padding-top-100-b-100-header">
-      <div class="row align-items-center">
-        <!-- Texto -->
-        <div class="col-lg-6 mb-4 mb-lg-0">
-          <h1 class="fw-bold mb-3">Tu mejor aliado en seguros</h1>
-          <p class="text-header text-white text-only-center">Nos mueve la pasión por proteger a quienes más lo
-            necesitan.</p>
-        </div>
-        <!-- Imagen -->
-        <div class="col-lg-6 text-center no-padding-mobile">
-          <img src="assets/desktop/aterna-agente-seguros.jpg" alt="Personas hablando de seguros"
-            class="img-fluid rounded-4">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="productos" class="bg-grey-blue-light">
-    <div class="container padding-top-100-b-100-header">
-      <h2 class="text-blue-aterna ">Nos aseguramos de acompañarte, siempre</h2>
-      <p class="text-header text-align-center-to-left">Diseñamos y operamos productos de prevención para que puedas
-        enfrentar cualquier imprevisto.</p>
-      <div class="insurance-desktop d-none d-md-block">
-        <div class="row g-0 mt-5">
-          <!-- Tarjeta 1 -->
-          <div class="col-md-4">
-            <div class="insurance-card">
-              <div class="icon-wrapper">
-                <img src="assets/general/seguro-vida-icono.png" alt="Seguro de vida" class="card-icon">
-                <span class="material-symbols-outlined arrow-icon arrow-default">east</span>
-                <span class="material-symbols-outlined arrow-icon arrow-hover">north_east</span>
-              </div>
-              <div class="card-footer">
-                <h3 class="card-title">Seguro de vida</h3>
-                <p class="card-description">Ofrecemos la tranquilidad de que tu familia no quedará desprotegida.</p>
-              </div>
-            </div>
+  <div class="main-content">
+    <section class="bk-strongblue text-white">
+      <div class="container padding-top-100-b-100-header">
+        <div class="row align-items-center">
+          <!-- Texto -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h1 class="fw-bold mb-3">Tu mejor aliado en seguros</h1>
+            <p class="text-header text-white text-only-center">Nos mueve la pasión por proteger a quienes más lo
+              necesitan.</p>
           </div>
-
-          <!-- Tarjeta 2 -->
-          <div class="col-md-4">
-            <div class="insurance-card">
-              <div class="icon-wrapper">
-                <img src="assets/general/seguro-salud-icono.png" alt="Seguro de salud" class="card-icon">
-                <span class="material-symbols-outlined arrow-icon arrow-default">east</span>
-                <span class="material-symbols-outlined arrow-icon arrow-hover">north_east</span>
-              </div>
-              <div class="card-footer">
-                <h3 class="card-title">Seguro de salud</h3>
-                <p class="card-description">Protegemos la integridad física de ti y tus seres queridos.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tarjeta 3 -->
-          <div class="col-md-4">
-            <div class="insurance-card">
-              <div class="icon-wrapper">
-                <img src="assets/general/seguro-dano-icono.png" alt="Seguro de daños" class="card-icon">
-                <span class="material-symbols-outlined arrow-icon arrow-default">east</span>
-                <span class="material-symbols-outlined arrow-icon arrow-hover">north_east</span>
-              </div>
-              <div class="card-footer">
-                <h3 class="card-title">Seguro de daños</h3>
-                <p class="card-description">Protege tu patrimonio ante accidentes o desastres naturales.</p>
-              </div>
-            </div>
+          <!-- Imagen -->
+          <div class="col-lg-6 text-center no-padding-mobile">
+            <img src="assets/desktop/aterna-agente-seguros.jpg" alt="Personas hablando de seguros"
+              class="img-fluid rounded-4">
           </div>
         </div>
       </div>
-      <div class="insurance-mobile d-block d-md-none mt-6">
-        <div class="insurance-slider-container">
-          <div class="insurance-slider">
+    </section>
 
+    <section id="productos" class="bg-grey-blue-light">
+      <div class="container padding-top-100-b-100-header">
+        <h2 class="text-blue-aterna">Nos aseguramos de acompañarte, siempre</h2>
+        <p class="text-header text-align-center-to-left">Diseñamos y operamos productos de prevención para que puedas
+          enfrentar cualquier imprevisto.</p>
+        <!-- SECCIÓN DESKTOP -->
+        <div class="insurance-desktop d-none d-md-block">
+          <div class="row g-0 mt-5">
             <!-- Tarjeta 1 -->
-            <div class="insurance-card">
-              <div class="icon-wrapper">
-                <img src="assets/general/seguro-vida-icono.png" alt="Seguro de vida" class="card-icon">
-                <span class="material-symbols-outlined arrow-icon">north_east</span>
+            <div class="col-md-4">
+              <div class="insurance-card" onclick="openModal('modalVida')">
+                <div class="icon-wrapper">
+                  <img src="assets/general/seguro-vida-icono.png" alt="Seguro de vida" class="card-icon">
+                  <span class="material-symbols-outlined arrow-icon arrow-default">east</span>
+                  <span class="material-symbols-outlined arrow-icon arrow-hover">north_east</span>
+                </div>
+                <div class="card-footer">
+                  <h3 class="card-title">Seguro de vida</h3>
+                  <p class="card-description">Ofrecemos la tranquilidad de que tu familia no quedará desprotegida.</p>
+                </div>
               </div>
-              <h3 class="card-title-mobile">Seguro de vida</h3>
-              <p class="card-description-mobile">Ofrecemos la tranquilidad de que tu familia no quedará desprotegida.
-              </p>
             </div>
 
             <!-- Tarjeta 2 -->
-            <div class="insurance-card">
-              <div class="icon-wrapper">
-                <img src="assets/general/seguro-salud-icono.png" alt="Seguro de salud" class="card-icon">
-                <span class="material-symbols-outlined arrow-icon">north_east</span>
+            <div class="col-md-4">
+              <div class="insurance-card" onclick="openModal('modalSalud')">
+                <div class="icon-wrapper">
+                  <img src="assets/general/seguro-salud-icono.png" alt="Seguro de salud" class="card-icon">
+                  <span class="material-symbols-outlined arrow-icon arrow-default">east</span>
+                  <span class="material-symbols-outlined arrow-icon arrow-hover">north_east</span>
+                </div>
+                <div class="card-footer">
+                  <h3 class="card-title">Seguro de salud</h3>
+                  <p class="card-description">Protegemos la integridad física de ti y tus seres queridos.</p>
+                </div>
               </div>
-              <h3 class="card-title-mobile">Seguro de salud</h3>
-              <p class="card-description-mobile">Protegemos la integridad física de ti y tus seres queridos.</p>
             </div>
 
             <!-- Tarjeta 3 -->
-            <div class="insurance-card p-d-right-0 ">
-              <div class="icon-wrapper">
-                <img src="assets/general/seguro-dano-icono.png" alt="Seguro de daños" class="card-icon">
-                <span class="material-symbols-outlined arrow-icon">north_east</span>
+            <div class="col-md-4">
+              <div class="insurance-card" onclick="openModal('modalDano')">
+                <div class="icon-wrapper">
+                  <img src="assets/general/seguro-dano-icono.png" alt="Seguro de daños" class="card-icon">
+                  <span class="material-symbols-outlined arrow-icon arrow-default">east</span>
+                  <span class="material-symbols-outlined arrow-icon arrow-hover">north_east</span>
+                </div>
+                <div class="card-footer">
+                  <h3 class="card-title">Seguro de daños</h3>
+                  <p class="card-description">Protege tu patrimonio ante accidentes o desastres naturales.</p>
+                </div>
               </div>
-              <h3 class="card-title-mobile">Seguro de daños</h3>
-              <p class="card-description-mobile">Protege tu patrimonio ante accidentes o desastres naturales.</p>
             </div>
+          </div>
+        </div>
 
+        <!-- SECCIÓN MOBILE -->
+        <div class="insurance-mobile d-block d-md-none mt-6">
+          <div class="insurance-slider-container">
+            <div class="insurance-slider">
+              <!-- Tarjeta 1 -->
+              <div class="insurance-card" onclick="openModal('modalVida')">
+                <div class="icon-wrapper">
+                  <img src="assets/general/seguro-vida-icono.png" alt="Seguro de vida" class="card-icon">
+                  <span class="material-symbols-outlined arrow-icon">north_east</span>
+                </div>
+                <h3 class="card-title-mobile">Seguro de vida</h3>
+                <p class="card-description-mobile">Ofrecemos la tranquilidad de que tu familia no quedará desprotegida.
+                </p>
+              </div>
+
+              <!-- Tarjeta 2 -->
+              <div class="insurance-card" onclick="openModal('modalSalud')">
+                <div class="icon-wrapper">
+                  <img src="assets/general/seguro-salud-icono.png" alt="Seguro de salud" class="card-icon">
+                  <span class="material-symbols-outlined arrow-icon">north_east</span>
+                </div>
+                <h3 class="card-title-mobile">Seguro de salud</h3>
+                <p class="card-description-mobile">Protegemos la integridad física de ti y tus seres queridos.</p>
+              </div>
+
+              <!-- Tarjeta 3 -->
+              <div class="insurance-card p-d-right-0" onclick="openModal('modalDano')">
+                <div class="icon-wrapper">
+                  <img src="assets/general/seguro-dano-icono.png" alt="Seguro de daños" class="card-icon">
+                  <span class="material-symbols-outlined arrow-icon">north_east</span>
+                </div>
+                <h3 class="card-title-mobile">Seguro de daños</h3>
+                <p class="card-description-mobile">Protege tu patrimonio ante accidentes o desastres naturales.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="mision" class="bg-grey-blue-light">
+      <div class="container padding-top-100-b-100">
+        <h2 class="text-blue-aterna ">Nos aseguramos de acompañarte, siempre</h2>
+        <p class="text-header text-align-center-to-left">Diseñamos y operamos productos de prevención para que puedas
+          enfrentar cualquier imprevisto.</p>
+        <div class="row text-center py-5">
+          <div class="col-md-4 mb-5 mt-5 mb-md-0">
+            <h3 class="text-blue-aterna" data-count="9.7M">
+              <span class="counter-number">0</span><span class="plus-symbol">+</span>
+            </h3>
+            <p class="texto-number mb-0">pólizas colocadas</p>
+          </div>
+
+          <div class="col-md-4 mb-5 mt-5 mb-md-0">
+            <h3 class="text-blue-aterna" data-count="32K">
+              <span class="counter-number">0</span><span class="plus-symbol">+</span>
+            </h3>
+            <p class="texto-number mb-0">siniestros atendidos</p>
+          </div>
+
+          <div class="col-md-4 mb-5 mt-5">
+            <h3 class="text-blue-aterna" data-count="191M">
+              <span class="counter-number">0</span><span class="plus-symbol">+</span>
+            </h3>
+            <p class="texto-number mb-0">beneficio gestionado</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="mision" class="bg-grey-blue-light">
-    <div class="container padding-top-100-b-100">
-      <h2 class="text-blue-aterna ">Nos aseguramos de acompañarte, siempre</h2>
-      <p class="text-header text-align-center-to-left">Diseñamos y operamos productos de prevención para que puedas
-        enfrentar cualquier imprevisto.</p>
-      <div class="row text-center py-5">
-        <div class="col-md-4 mb-5 mt-5 mb-md-0">
-          <h3 class="text-blue-aterna">16.9M+</h3>
-          <p class="texto-number mb-0">pólizas colocadas</p>
+    <section id="quienes" class="bk-lavender">
+      <div class="container padding-top-100-b-100 text-center">
+        <h2 class="mb-3 text-blue-aterna ">Calidez que nos distingue</h2>
+        <p class="mb-5 text-c-10 text-only-left">
+          Iniciamos operaciones en 2012, resultado de la alianza estratégica entre Gentera, grupo emprendedor líder de
+          la inclusión financiera, e INTERprotección, el bróker de seguros más grande de Latinoamérica.
+        </p>
+        <div class="d-flex justify-content-center align-items-center gap-4 mb-5 logo-row">
+          <img src="assets/general/gentera.png" alt="Logo Gentera" class="logo-img">
+          <div class="logo-divider"></div>
+          <img src="assets/general/inter.png" alt="Logo Interprotección" class="logo-img">
         </div>
-  
-        <div class="col-md-4 mb-5 mt-5 mb-md-0">
-          <h3 class="text-blue-aterna">11K+</h3>
-          <p class="texto-number mb-0">siniestros atendidos</p>
-        </div>
-        <div class="col-md-4 mb-5 mt-5">
-          <h3 class="text-blue-aterna">14.6M+</h3>
-          <p class="texto-number mb-0">beneficio gestionado</p>
+        <div class="row text-start gy-4">
+          <div class="col-md-4">
+            <img src="assets/general/relaciones-confianza.jpg" alt="Relaciones de confianza"
+              class="img-fluid rounded mb-3">
+            <h5 class="fw-bold text-c-10">Relaciones de confianza</h5>
+            <p class="text-c-10">Acompañamos a nuestros clientes en los momentos más difíciles.</p>
+          </div>
+          <div class="col-md-4">
+            <img src="assets/general/cambiando-paradigmas.jpg" alt="Cambiando paradigmas"
+              class="img-fluid rounded mb-3">
+            <h5 class="fw-bold text-c-10">Cambiando paradigmas</h5>
+            <p class="text-c-10">Buscamos impulsar el conocimiento y uso de los seguros.</p>
+          </div>
+          <div class="col-md-4">
+            <img src="assets/general/colaboracion-armonia.jpg" alt="Colaboración en armonía"
+              class="img-fluid rounded mb-3">
+            <h5 class="fw-bold text-c-10">Colaboración en armonía</h5>
+            <p class="text-c-10">Un servicio óptimo por un equipo que comparte valores y metas.</p>
+          </div>
         </div>
       </div>
+    </section>
+
+    <section id="escribenos" class="bg-grey-blue-light">
+      <div class="container padding-top-100-b-100">
+
+        <h2 class="text-blue-aterna ">Queremos escucharte</h2>
+        <p class="mb-5 text-c-10 text-align-center-to-left">
+          Querido cliente, si tienes algún reclamo o consulta, usa el siguiente formulario para poder atenderte.
+        </p>
+
+        <form id="reclamo-form">
+          <div class="row g-3">
+
+            <!-- Producto y Nombre -->
+            <div class="col-md-6">
+              <label for="producto" class="form-label">Producto adquirido</label>
+              <input type="text" class="form-input" id="producto" placeholder="Coloca el nombre del producto" required>
+            </div>
+
+            <div class="col-md-6">
+              <label for="nombre" class="form-label">Nombre completo</label>
+              <input type="text" class="form-input" id="nombre" placeholder="Ingresa tu nombre(s) y apellidos" required>
+            </div>
+
+            <!-- DNI y Correo -->
+            <div class="col-md-6">
+              <label for="dni" class="form-label">DNI</label>
+              <input type="text" class="form-input" id="dni" placeholder="8 dígitos" maxlength="8" required>
+            </div>
+
+            <div class="col-md-6">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-input" id="email" placeholder="ejemplo@correo.com" required>
+            </div>
+
+            <!-- Teléfono y Reclamo -->
+            <div class="col-md-6">
+              <label for="telefono" class="form-label">Número telefónico</label>
+              <input type="text" class="form-input" id="telefono" placeholder="9 dígitos" maxlength="9" required>
+            </div>
+
+            <div class="col-md-6">
+              <label for="mensaje" class="form-label">Reclamo/Solicitud</label>
+              <textarea class="form-input" id="mensaje" rows="3" placeholder="Escribe tu queja o sugerencia"
+                required></textarea>
+            </div>
+          </div>
+
+          <!-- Aviso de privacidad -->
+          <p class="mt-4 aviso-privacidad text-left">
+            Al registrarte, confirmas que aceptas que Aterna procese tus datos personales tal como se describe en el
+            <a href="docs/politicia-privacidad-aterna.pdf" class="privacy-link" target="_blank" rel="noopener">Aviso de
+              Privacidad</a>.
+          </p>
+
+          <!-- Requerido -->
+          <p class="mt-1 file-required-text text-left">
+            <span class="file-required">❶</span> Todos los campos son obligatorios.
+          </p>
+
+          <!-- Botón -->
+          <div class="form-buttons">
+            <button type="button" class="primary-button" onclick="window.location.href='gracias.html'" disabled>Enviar</button>
+          </div>
+
+        </form>
+
+      </div>
+    </section>
+
+  </div>
+
+
+  <!-- MODAL SEGURO DE VIDA -->
+  <div class="modal-overlay d-none" id="overlayVida" onclick="closeModal('modalVida')">
+    <div class="modal-mobile" id="modalVida" onclick="event.stopPropagation()">
+      <button class="close-modal" onclick="closeModal('modalVida')">
+        <img src="assets/icon/close-btn.png" alt="Cerrar modal">
+      </button>
+      <img src="assets/general/seguro-vida-icono.png" class="mb-4">
+      <h4 class="modal-title">Coberturas</h4>
+      <ul class="modal-list" style="--bullet-color: #212492;">
+        <li>Fallecimiento, muerte por cualquier causa</li>
+        <li>Muerte Accidental</li>
+        <li>Saldo Deudor</li>
+        <li>Eventos de Vida</li>
+        <li>Gastos de defunción</li>
+      </ul>
     </div>
-  </section>
+  </div>
 
-  <section id="quienes" class="bk-lavender">
-    <div class="container padding-top-100-b-100">
-      
+  <!-- MODAL SEGURO DE SALUD -->
+  <div class="modal-overlay d-none" id="overlaySalud" onclick="closeModal('modalSalud')">
+    <div class="modal-mobile" id="modalSalud" onclick="event.stopPropagation()">
+      <button class="close-modal" onclick="closeModal('modalSalud')">
+        <img src="assets/icon/close-btn.png" alt="Cerrar modal">
+      </button>
+      <img src="assets/general/seguro-salud-icono.png" class="mb-4">
+      <h4 class="modal-title">Coberturas</h4>
+      <ul class="modal-list" style="--bullet-color: #00B092;">
+        <li>Renta Hospitalaria</li>
+        <li>Apoyo por Intervención Quirúrgica</li>
+        <li>Reembolso de GMM por accidente</li>
+        <li>Diagnóstico por Enfermedades Terminales/Graves</li>
+        <li>Diagnóstico Cáncer</li>
+        <li>Infarto</li>
+      </ul>
     </div>
-  </section>
+  </div>
 
-  <section id="escribenos" class="container padding-top-100-b-100">
-    <h1>Escríbenos</h1>
-    <p>Nos encanta saber de ti. Ya sea que tengas dudas, sugerencias, ideas o simplemente quieras saludar, este espacio
-      es para ti.</p>
-    <p>Muy pronto encontrarás aquí un formulario de contacto para que puedas enviarnos tu mensaje fácilmente. Mientras
-      tanto, puedes comunicarte con nosotros a través de nuestras redes sociales o enviarnos un correo electrónico.</p>
-    <p>Valoramos cada mensaje que recibimos y siempre respondemos en el menor tiempo posible. Queremos construir una
-      comunidad sólida donde el diálogo y la retroalimentación sean parte fundamental de nuestro crecimiento.</p>
-    <p>Tu opinión es importante para nosotros. Gracias por tomarte el tiempo de escribirnos y ayudarnos a mejorar cada
-      día.</p>
-    <p>Estamos para escucharte. ¡No dudes en contactarnos!</p>
-  </section>
-</div>
-
+  <!-- MODAL SEGURO DE DAÑOS -->
+  <div class="modal-overlay d-none" id="overlayDano" onclick="closeModal('modalDano')">
+    <div class="modal-mobile" id="modalDano" onclick="event.stopPropagation()">
+      <button class="close-modal" onclick="closeModal('modalDano')">
+        <img src="assets/icon/close-btn.png" alt="Cerrar modal">
+      </button>
+      <img src="assets/general/seguro-dano-icono.png" class="mb-4">
+      <h4 class="modal-title">Coberturas</h4>
+      <ul class="modal-list" style="--bullet-color: #CA005D;">
+        <li>Infarto</li>
+        <li>Robo Bolsa/Cartera</li>
+        <li>Robo Retiro en ATM</li>
+        <li>Robo de Celular</li>
+        <li>Compra Protegida</li>
+        <li>Casa Habitación / Negocio</li>
+        <li>Mascotas</li>
+        <li>Desempleo</li>
+      </ul>
+    </div>
+  </div>
 
 
 
   <!-- Footer -->
   <footer class="custom-footer">
-    <div class="container text-center ">
-      <a href="https://www.compartamos.com.mx/compartamos">
-        <img src="assets/images/logo_CB.png" alt="Compartamos Banco" class="footer-logo mt-4" width="120">
-      </a>
-      <p class="empresa-text mt-2">Una empresa de
-        <img src="assets/images/logo_gentera.png" alt="Compartamos Banco" class="footer-logo" width="80">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/general/aterna-logo-color.png" alt="Logo Aterna" class="footer-logo">
+
+        <div class="footer-brand-info">
+          <p class="empresa-text">
+            Una empresa de
+            <img src="assets/general/gentera-logo-solid.png" class="gentera-img-f" alt="Gentera" width="80">
+          </p>
+          <p class="empresa-text">© 2025 Gentera S. A. B.</p>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <a href="#" target="_blank"><img src="assets/general/linkedin-icono.png" alt="LinkedIn"></a>
+        <a href="mailto:contacto@aterna.com"><img src="assets/general/mail-icono.png" alt="Correo"></a>
+      </div>
+    </div>
+
+    <div class="footer-contact">
+      <p class="footer-address">
+        Av. Paseo de la República 5895 piso 13 Miraflores.
+        <span class="dot-desktop"> • </span>
+        <br class="mobile-only">
+        Teléfonos:
       </p>
-      <p class="empresa-text">© 2025 Gentera S. A. B.</p>
-      <p class="mt-4">
-        <a href="https://www.compartamos.com.mx/compartamos/regulacion/privacidad" class="footer-link">Aviso de
-          Privacidad</a> |
-        <a href="https://www.compartamos.com.mx/compartamos/regulacion/terminos-y-condiciones"
-          class="footer-link">Términos y Condiciones</a>
+      <p class="footer-phone">
+        <a href="tel:983156855">98-315-6855</a> /
+        <a href="tel:965280773">96-528-0773</a>
       </p>
+    </div>
+
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-links">
+      <a href="docs/politicia-privacidad-aterna.pdf" target="_blank" rel="noopener">Política de Privacidad</a>
+      <a href="docs/proceso-reclamacion-requerimientos.pdf" target="_blank" rel="noopener">Proceso de atención de
+        reclamos y requerimientos</a>
+      <a href="docs/relacion-bancos-de-datos-personales-aterna.pdf" target="_blank" rel="noopener">Registro Nacional de
+        Protección de Datos</a>
+      <a href="docs/relacion-proveedores-socios-comerciales-aterna.pdf" target="_blank" rel="noopener">Relación de
+        Proveedores y Socios Comerciales</a>
     </div>
   </footer>
 
