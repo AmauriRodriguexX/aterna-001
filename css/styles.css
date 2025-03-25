@@ -105,16 +105,16 @@
 }
 
 @font-face {
-     font-family: 'Material Symbols Outlined';
-     src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v230/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCvHOej.woff2) format('woff2');
+     font-family: 'Material Symbols';
+     src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v232/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCvHOej.woff2) format('woff2');
      font-weight: normal;
      font-style: normal;
 }
 
 
 .material-symbols-outlined {
-     font-variation-settings: 'FILL' 0, 'wght' 600, 'GRAD' 0, 'opsz' 24;
-     font-family: 'Material Symbols Outlined';
+     font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+     font-family: 'Material Symbols';
      font-weight: normal;
      font-style: normal;
      font-size: 24px;
@@ -471,7 +471,7 @@ span.thin {
 }
 
 .padding-top-100-b-100-header {
-     padding-top: 100px;
+     padding-top: 130px;
      padding-bottom: 100px;
 }
 
@@ -484,27 +484,27 @@ span.thin {
 /* En dispositivos móviles */
 @media (max-width: 768px) {
      .padding-top-50-b-50 {
-          padding-top: 70px !important;
+          padding-top: 100px !important;
           padding-bottom: 0px !important;
      }
 }
 /* En dispositivos móviles */
 @media (max-width: 768px) {
      .padding-top-100-b-100-header {
-          padding-top: 50px !important;
+          padding-top: 100px !important;
           padding-bottom: 0px !important;
      }
 }
 
 .padding-top-100-b-100 {
-     padding-top: 100px;
+     padding-top: 130px;
      padding-bottom: 100px;
 }
 
 /* En dispositivos móviles */
 @media (max-width: 768px) {
      .padding-top-100-b-100 {
-          padding-top: 50px !important;
+          padding-top: 130px !important;
           padding-bottom: 50px !important;
      }
 }
@@ -781,7 +781,7 @@ span.thin {
 }
 
 .logo-img {
-     width: 170px;
+     width: 140px;
 }
 
 /* Divider por defecto (visible) */
@@ -957,7 +957,6 @@ span.thin {
           padding: 3rem;
           max-width: 800px;
           width: 800px;
-          height: 884px;
           margin: auto;
           top: 50%;
           left: 50%;
@@ -1185,7 +1184,7 @@ span.thin {
 
 .thank-img {
      border-radius: 12px;
-     max-width: 100%;
+     max-width: 80%;
      height: auto;
      display: block;
      margin: 0 auto 2rem auto;
@@ -1216,4 +1215,8 @@ span.thin {
      .text-header.text-align-center-to-left {
           text-align: left;
      }
+}
+
+.p-d-right-8  {
+     padding-right: 9px;
 }
