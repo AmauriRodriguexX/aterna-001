@@ -1,3 +1,4 @@
+// MARK: - Menú sidebar (mobile)
 const toggleBtn = document.getElementById('toggleSidebar');
 const menuIcon = document.getElementById('menuIcon');
 const sidebar = document.getElementById('sidebarMenu');
@@ -6,55 +7,53 @@ const overlay = document.getElementById('sidebarOverlay');
 const menuImg = 'assets/icon/menu.png';
 const closeImg = 'assets/icon/menu-close.png';
 
-toggleBtn.addEventListener('click', () => {
-  const isOpen = sidebar.classList.contains('active');
-  sidebar.classList.toggle('active');
-  overlay.classList.toggle('active');
-  menuIcon.src = isOpen ? menuImg : closeImg;
-});
-
-overlay.addEventListener('click', () => {
-  sidebar.classList.remove('active');
-  overlay.classList.remove('active');
-  menuIcon.src = menuImg;
-});
-
-document.querySelectorAll('.scroll-link').forEach(link => {
-  link.addEventListener('click', function(e) {
-    e.preventDefault();
-    const targetId = this.getAttribute('href').substring(1);
-    const section = document.getElementById(targetId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-      sidebar.classList.remove('active');
-      overlay.classList.remove('active');
-      menuIcon.src = menuImg;
-    }
+if (toggleBtn && menuIcon && sidebar && overlay) {
+  toggleBtn.addEventListener('click', () => {
+    const isOpen = sidebar.classList.contains('active');
+    sidebar.classList.toggle('active');
+    overlay.classList.toggle('active');
+    menuIcon.src = isOpen ? menuImg : closeImg;
   });
-});
 
+  overlay.addEventListener('click', () => {
+    sidebar.classList.remove('active');
+    overlay.classList.remove('active');
+    menuIcon.src = menuImg;
+  });
+}
+
+// MARK: - Smooth scroll + cerrar menú mobile
 document.querySelectorAll('.scroll-link').forEach(link => {
-  link.addEventListener('click', function(e) {
+  link.addEventListener('click', function (e) {
     e.preventDefault();
     const targetId = this.getAttribute('href').substring(1);
     const section = document.getElementById(targetId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
-      // Cierra el menú en mobile
-      const bsCollapse = bootstrap.Collapse.getInstance(document.getElementById('mainNavbar'));
-      if (bsCollapse) {
-        bsCollapse.hide();
+
+      // Cierra menú tipo sidebar si existe
+      if (sidebar && overlay && menuIcon) {
+        sidebar.classList.remove('active');
+        overlay.classList.remove('active');
+        menuIcon.src = menuImg;
+      }
+
+      // Cierra menú Bootstrap si está activo (para menús tipo navbar collapse)
+      const mainNavbar = document.getElementById('mainNavbar');
+      if (mainNavbar) {
+        const bsCollapse = bootstrap.Collapse.getInstance(mainNavbar);
+        if (bsCollapse) {
+          bsCollapse.hide();
+        }
       }
     }
   });
 });
 
-
-//MARK: - animacion de contador de numeros 
-
+// MARK: - Animación contador de números
 function animateCounter(el, finalValue, suffix) {
-  const numberEl = el.querySelector('.counter-number'); // ← esta línea se agregó
-  if (!numberEl) return; // seguridad por si no existe
+  const numberEl = el.querySelector('.counter-number');
+  if (!numberEl) return;
 
   let start = 0;
   const duration = 1000;
@@ -63,23 +62,16 @@ function animateCounter(el, finalValue, suffix) {
   function update(currentTime) {
     const elapsed = currentTime - startTime;
     const progress = Math.min(elapsed / duration, 1);
-    const current = finalValue * progress;
+    let current = finalValue * progress;
 
-    // Formatear el número correctamente
-    let displayValue = current;
+    // Ajustar según sufijo
+    if (suffix === 'K') current = current / 1000;
+    else if (suffix === 'M') current = current / 1000000;
 
-    if (suffix === 'K') {
-      displayValue = current / 1000;
-    } else if (suffix === 'M') {
-      displayValue = current / 1000000;
-    }
+    // Redondeo
+    const displayValue = (current % 1 === 0) ? parseInt(current) : current.toFixed(1);
 
-    // Quitar decimales si no es necesario
-    displayValue = (displayValue % 1 === 0)
-      ? parseInt(displayValue)
-      : displayValue.toFixed(1);
-
-    numberEl.textContent = displayValue + suffix; // ← solo cambia el número
+    numberEl.textContent = displayValue + suffix;
 
     if (progress < 1) {
       requestAnimationFrame(update);
@@ -91,6 +83,7 @@ function animateCounter(el, finalValue, suffix) {
 
 function initCounterAnimation() {
   const counters = document.querySelectorAll('.text-blue-aterna[data-count]');
+  if (!counters.length) return;
 
   const observer = new IntersectionObserver((entries, obs) => {
     entries.forEach(entry => {
@@ -124,16 +117,16 @@ function initCounterAnimation() {
 
 document.addEventListener('DOMContentLoaded', initCounterAnimation);
 
-
-//MARK: - abrir modales
-
+// MARK: - Abrir y cerrar modales
 function openModal(modalId) {
   const overlayId = `overlay${modalId.replace('modal', '')}`;
   const modalOverlay = document.getElementById(overlayId);
   const modal = document.getElementById(modalId);
 
-  modalOverlay.classList.remove('d-none');
-  modal.classList.add('show'); // ← activa animación para mobile
+  if (modalOverlay && modal) {
+    modalOverlay.classList.remove('d-none');
+    modal.classList.add('show');
+  }
 }
 
 function closeModal(modalId) {
@@ -141,6 +134,8 @@ function closeModal(modalId) {
   const modalOverlay = document.getElementById(overlayId);
   const modal = document.getElementById(modalId);
 
-  modal.classList.remove('show');
-  modalOverlay.classList.add('d-none');
+  if (modalOverlay && modal) {
+    modal.classList.remove('show');
+    modalOverlay.classList.add('d-none');
+  }
 }
