@@ -202,7 +202,7 @@ h4 {
 /* Estilo h5 */
 h5 {
      color: #212492;
-     font-family: Inter;
+     font-family: 'Inter', sans-serif !important;
      font-size: 28px;
      font-style: normal;
      font-weight: 500;
@@ -252,7 +252,7 @@ h5 {
 .text-c-10 {
      font-family: 'Inter', sans-serif !important;
      color: #252A2D;
-     font-family: Inter;
+     font-family: 'Inter', sans-serif !important;
      font-size: 28px;
      font-style: normal;
      font-weight: 300;
@@ -271,7 +271,7 @@ h5 {
 p {
      font-family: 'Inter', sans-serif !important;
      color: #252A2D;
-     font-family: Inter;
+     font-family: 'Inter', sans-serif !important;
      font-size: 18px;
      font-style: normal;
      font-weight: 400;
@@ -374,7 +374,7 @@ span.thin {
 .nav-link {
      color: #212492 !important;
      text-align: center;
-     font-family: Inter;
+     font-family: 'Inter', sans-serif !important;
      font-size: 18px;
      font-style: normal;
      font-weight: 500;
@@ -462,7 +462,7 @@ span.thin {
 @media (max-width: 768px) {
      .sidebar-link {
        color: #252A2D;
-       font-family: Inter;
+       font-family: 'Inter', sans-serif !important;
        font-size: 22px;
        font-style: normal;
        font-weight: 400;
@@ -755,7 +755,7 @@ span.thin {
 .insurance-mobile .card-title-mobile {
 
      font-family: 'Inter', sans-serif;
-     font-family: Inter;
+     font-family: 'Inter', sans-serif !important;
      font-size: 28px;
      font-style: normal;
      font-weight: 700;
@@ -865,7 +865,7 @@ span.thin {
 .counter-number {
      font-size: 104px;
      line-height: 104px;
-     font-family: Inter;
+     font-family: 'Inter', sans-serif !important;
      font-weight: 300;
      color: var(--Fills-primary-blue, #212492);
 }
@@ -925,7 +925,7 @@ span.thin {
 /* Título */
 .modal-title {
      color: #212492;
-     font-family: Inter;
+     font-family: 'Inter', sans-serif !important;
      font-size: 28px;
      font-style: normal;
      font-weight: 700;
